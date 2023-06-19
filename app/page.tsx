@@ -85,7 +85,7 @@ const Home = () => {
   }, [searchHistory]);
 
   return (
-    <div className="w-full mt-10">
+    <div className="w-full mt-14">
       <div className="mb-4 flex flex-col md:flex-row w-full items-center px-10">
         <div className="flex flex-col items-center justify-center w-full md:w-1/2 mb-6 md:mb-0">
           <p className="text-5xl md:text-6xl lg:text-6xl mb-10 text-center">How far from Heathrow?</p>
