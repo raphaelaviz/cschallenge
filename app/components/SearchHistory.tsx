@@ -11,7 +11,7 @@ interface SearchHistoryProps {
 
 const SearchHistory: React.FC<SearchHistoryProps> = ({ searchHistory }) => {
   return (
-    <div className='mt-2'>
+    <div className='mt-2 h-80'>
       <h2 className="text-2xl font-semibold">Your recent searches:</h2>
       <div className="flex flex-col md:flex-row justify-around mt-12">
 
