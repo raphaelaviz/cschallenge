@@ -24,6 +24,6 @@ describe('ResponseContainer', () => {
 
   it('displays default text when no data or currentSearch is provided', () => {
     render(<ResponseContainer data={null} currentSearch={null} />);
-    expect(screen.getByText(/Distance from _____ to Heathrow Airport:/)).toBeInTheDocument();
+    expect(screen.getByText(/Distance in a straight line from _____ to Heathrow Airport:/)).toBeInTheDocument();
   });
 });

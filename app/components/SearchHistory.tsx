@@ -11,9 +11,9 @@ interface SearchHistoryProps {
 
 const SearchHistory: React.FC<SearchHistoryProps> = ({ searchHistory }) => {
   return (
-    <div className='mt-2 h-80'>
-      <h2 className="text-2xl font-semibold">Your recent searches:</h2>
-      <div className="flex flex-col md:flex-row justify-around mt-12">
+    <div className='mt-10 mb-10'>
+      <h2 className="text-2xl font-semibold text-center">Your recent searches:</h2>
+      <div className="flex flex-col px-10 md:flex-row justify-around mt-12">
 
         {searchHistory.map((entry, index) => (
           <div key={index} className="bg-gray-200 rounded-lg p-4 mb-4 md:mb-0">

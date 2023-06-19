@@ -10,7 +10,7 @@ describe('Home', () => {
 it('renders the SearchForm, ResponseContainer, and SearchHistory components', () => {
     render(<Home />);
     expect(screen.getByPlaceholderText(/Enter postcode here/i)).toBeInTheDocument(); // (SearchForm)
-    expect(screen.getByText(/Distance from _____ to Heathrow Airport:/i)).toBeInTheDocument(); // (ResponseContainer)
+    expect(screen.getByText(/Distance in a straight line from _____ to Heathrow Airport:/i)).toBeInTheDocument(); // (ResponseContainer)
     expect(screen.getByText(/Your recent searches/i)).toBeInTheDocument(); // (SearchHistory)
   });
   

@@ -91,13 +91,9 @@ const Home = () => {
           <p className="text-5xl md:text-6xl lg:text-6xl mb-10 text-center">How far from Heathrow?</p>
           <SearchForm onSubmit={getPostcodeData} />
         </div>
-        <div className="flex items-center justify-center p-4 overflow-auto w-full md:w-1/2">
           <ResponseContainer data={postcodeData} currentSearch={currentSearch} />
-        </div>
       </div>
-      <div className="w-full p-4">
         <SearchHistory searchHistory={searchHistory} />
-      </div>
     </div>
 );
 };

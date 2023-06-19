@@ -26,7 +26,7 @@ const ResponseContainer: React.FC<ResponseContainerProps> = ({ data, currentSear
     return (
       <div className="w-2/3 p-9 border-4 border-gray-700 rounded-lg">
         <p className="text-xl font-bold mb-4">
-          Distance from {currentSearch.address} to Heathrow Airport:
+          Distance in a straight line from {currentSearch.address} to Heathrow Airport:
         </p>
         <p className="text-sm text-gray-400 mb-4">
           (Latitude: {currentSearch.latitude.toFixed(4)}, Longitude: {currentSearch.longitude.toFixed(4)})
@@ -42,8 +42,8 @@ const ResponseContainer: React.FC<ResponseContainerProps> = ({ data, currentSear
   } else {
     return (
       <div className="w-2/3 p-9 border-4 border-gray-700 rounded-lg">
-        <p className="text-xl font-bold">
-          Distance from _____ to Heathrow Airport:
+        <p className="text-xl font-bold text-center">
+        Distance in a straight line from _____ to Heathrow Airport:
         </p>
       </div>
     );
