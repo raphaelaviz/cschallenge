@@ -47,10 +47,11 @@ const SearchForm: React.FC<SearchFormProps> = ({ onSubmit }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+    
+    // The rule below was taken from official government documentation an analysis from valid postcodes.
+    // Check https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/611951/Appendix_C_ILR_2017_to_2018_v1_Published_28April17.pdf 
+    
     if (!/^[a-zA-Z][a-zA-Z0-9\s]{4,6}$/.test(postcodeInput)) {
-      // The rule below was taken from official government documentation an analysis from valid postcodes.
-      // Check https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/611951/Appendix_C_ILR_2017_to_2018_v1_Published_28April17.pdf 
 
       setValidationErrorMessage("The postcode must start with a letter and have from 5 to 7 alphanumeric characters.");
     } else {
